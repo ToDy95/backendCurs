@@ -20,6 +20,9 @@ require('dotenv').config();
 app.use('/api', routes)
 
 //
+app.get("/" ,(req, res ) =>{
+  res.send("SALUT");
+})
 
 
 app.listen(process.env.PORT, () => {
