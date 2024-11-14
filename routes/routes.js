@@ -10,8 +10,8 @@ router.route('/employ')
 
 router.route('/employ/:id')
 .get(controller.getOneEmployer)
-.patch()
-.delete()
+.patch(controller.updateEmployer)
+.delete(controller.deleteEmployer)
 
 router.get('/readfile', fileController.readFromFile)
 router.post('/createfile', fileController.createNewFile)
